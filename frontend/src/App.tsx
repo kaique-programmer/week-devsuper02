@@ -1,12 +1,16 @@
-import React from 'react';
+import Navbar from "components/Navbar";
+import DataTable from "components/Datatable";
+import Footer from "components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>HEllo</h1>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className="container">
+        <DataTable />
+      </div>
+      <Footer />
+    </>
   );
 }
 
