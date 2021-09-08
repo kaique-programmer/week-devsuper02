@@ -6,8 +6,6 @@ O site tem o objetivo de oferecer uma visibilidade intuitiva com gráficos, aná
 ### Pré-requisitos
 Ter conhecimento das tecnologias implementadas para manipulação dos códigos fontes.
 
-## Ambiente de Execução
-
 ## Construído com
 
 * HTML
