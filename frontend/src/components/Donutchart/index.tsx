@@ -11,7 +11,7 @@ type ChartData = {
 
 function Donutchart() {
 
-  const [chartData, setChartData] = useState<ChartData>({ labels: [], series: [], });
+  const [chartData, setChartData] = useState<ChartData>({ labels: [], series: [] });
 
   useEffect(() => {
     axios.get(`${BASE_URL}/sales/amount-by-seller`)
@@ -20,7 +20,7 @@ function Donutchart() {
         const myLabels = data.map(x => x.sellerName);
         const mySeries = data.map(x => x.sum);
   
-        setChartData({ labels: myLabels, series: mySeries, });
+        setChartData({ labels: myLabels, series: mySeries });
         
       });
   }, []);
