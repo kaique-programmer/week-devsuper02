@@ -5,7 +5,7 @@ import { SalePage } from "types/sale";
 import { formatLocalDate } from "utils/format";
 import { BASE_URL } from "utils/request";
 
-const DataTable = () => {
+function DataTable() {
   const [activePage, setActivePage] = useState(0);
   const [page, setPage] = useState<SalePage>({
     first: true,
@@ -41,13 +41,13 @@ const DataTable = () => {
             </tr>
           </thead>
           <tbody>
-            {page.content?.map(x => (
-              <tr key={x.id}>
-                <td>{formatLocalDate(x.date, "dd/MM/yyyy")}</td>
-                <td>{x.seller.name}</td>
-                <td>{x.visited}</td>
-                <td>{x.deals}</td>
-                <td>{x.amount.toFixed(2)}</td>
+            {page.content?.map(item => (
+              <tr key={item.id}>
+                <td>{formatLocalDate(item.date, "dd/MM/yyyy")}</td>
+                
+                <td>{item.visited}</td>
+                <td>{item.deals}</td>
+                <td>{item.amount.toFixed(2)}</td>
               </tr>
             ))}
           </tbody>

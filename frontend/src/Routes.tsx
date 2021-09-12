@@ -2,7 +2,7 @@ import Dashboard from "pages/Dashboard";
 import Home from "pages/Home";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-function Routes() {
+const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
