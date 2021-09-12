@@ -41,10 +41,10 @@ function DataTable() {
             </tr>
           </thead>
           <tbody>
-            {page.content?.map(item => (
+            {page.content?.map((item) => (
               <tr key={item.id}>
                 <td>{formatLocalDate(item.date, "dd/MM/yyyy")}</td>
-                <td>{item.seller.id}</td>
+                <td>{item.seller.name}</td>
                 <td>{item.visited}</td>
                 <td>{item.deals}</td>
                 <td>{item.amount.toFixed(2)}</td>
