@@ -43,16 +43,4 @@ public class Seller {
         return sales;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Seller)) return false;
-        Seller seller = (Seller) o;
-        return getId() == seller.getId();
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId());
-    }
 }
